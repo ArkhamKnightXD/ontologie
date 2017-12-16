@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Control -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Control">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Rec"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment_Rec"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Organise_Course -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Organise_Course">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#add_Offer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#add_Offer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Offer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_store"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Account -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Account">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_Account"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach_Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Coach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Coach">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Course -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Course">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Aerobic_Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Body_Building_Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Yoga_Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#fitness_Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#flexibility_Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Player -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Player">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Studient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Studient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Studient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#prepare_Plan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#prepare_Plan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Timing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Rooms_Plan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#recommand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#recommand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#recommanded_By -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#recommanded_By">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#subscribe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#subscribe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club_Site"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#use_App -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#use_App">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#RA_App"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#used_By -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#used_By">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#works_At -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#works_At">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_CIN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_CIN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_ID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Type">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_family_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_family_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Admin">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Manager"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Aerobic_Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Aerobic_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Body_Building_Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Body_Building_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Player"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Studient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_Account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_store"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Teacher"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach_Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach_Account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Rec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Rec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Timing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Timing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment_Rec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment_Rec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club_Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club_Site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Manager"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Offer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Offer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#RA_App -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#RA_App">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Rooms_Plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Rooms_Plan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Studient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Studient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Teacher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Yoga_Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Yoga_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#fitness_Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#fitness_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#flexibility_Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#flexibility_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#client1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#client1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Agent"/>
+        <has_CIN rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9411111.0</has_CIN>
+        <has_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asma.xyz@gmail.com</has_Email>
+        <has_family_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">schwarz</has_family_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

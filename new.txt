@@ -1,0 +1,860 @@
+{ 
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_ID" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#prepare_Plan" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Rooms_Plan"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Timing"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#works_At" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#used_By" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Teacher" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Studient" : { 
+    "http://www.w3.org/2002/07/owl#inverseOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_Account" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Yoga_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Ontology"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Aerobic_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#flexibility_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#RA_App" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_CIN" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2002/07/owl#equivalentClass" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Player"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Studient"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment_Rec" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Agent" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Manager" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Organise_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_name" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Timing" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Player" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Control" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Rec"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment_Rec"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#client1" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Agent"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+    }
+     ] ,
+    "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Email" : [ { 
+      "type" : "literal" ,
+      "value" : "asma.xyz@gmail.com"
+    }
+     ] ,
+    "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_family_name" : [ { 
+      "type" : "literal" ,
+      "value" : "schwarz"
+    }
+     ] ,
+    "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_CIN" : [ { 
+      "type" : "literal" ,
+      "value" : "9411111.0" ,
+      "datatype" : "http://www.w3.org/2001/XMLSchema#double"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2002/07/owl#equivalentClass" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Teacher"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Email" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#fitness_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#recommand" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Type" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Equipment"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#use_App" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Application"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#RA_App"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Player" : { 
+    "http://www.w3.org/2002/07/owl#equivalentProperty" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Studient"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#recommanded_By" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Body_Building_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Account" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_Account"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach_Account"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Admin" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2002/07/owl#equivalentClass" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Manager"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Coach" : { 
+    "http://www.w3.org/2002/07/owl#equivalentProperty" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Teacher"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#add_Offer" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Offer"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Activity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_store"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Planning" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#input_Data"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_Course" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Body_Building_Course"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Yoga_Course"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#fitness_Course"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Aerobic_Course"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#flexibility_Course"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Coach_Account" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Offer" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#has_family_name" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Personne"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#subscribe" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club_Site"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Work_Place" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Rooms_Plan" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Client_store" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Course_Rec" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Recommandation"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Account" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Studient" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ]
+  }
+   ,
+  "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Gym_Club_Site" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.semanticweb.org/opendev/ontologies/2017/10/untitled-ontology-8#Web_Site"
+    }
+     ]
+  }
+}
