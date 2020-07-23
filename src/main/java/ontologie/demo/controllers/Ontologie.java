@@ -6,7 +6,6 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.json.simple.JSONObject;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -17,50 +16,64 @@ import java.util.List;
 public class Ontologie {
 
     @RequestMapping(value = "/ontologies",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getontologies() {
+    public List<JSONObject> getontologies() {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
             Iterator ontologiesIter = model.listOntologies();
-            while (ontologiesIter.hasNext()) {
-                Ontology ontology = (Ontology) ontologiesIter.next();
 
+            while (ontologiesIter.hasNext()) {
+
+                Ontology ontology = (Ontology) ontologiesIter.next();
                 JSONObject obj = new JSONObject();
                 obj.put("name",ontology.getLocalName());
                 obj.put("uri",ontology.getURI());
+
                 list.add(obj);
 
             }
+
             return list;
         } catch (Exception e) {
+
             e.printStackTrace();
         }
         return null;
     }
 
     @RequestMapping(value = "/classesList",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getClasses() {
+    public List<JSONObject> getClasses() {
+
         List<JSONObject> list=new ArrayList();
+
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
             Iterator classIter = model.listClasses();
+
             while (classIter.hasNext()) {
+
                 OntClass ontClass = (OntClass) classIter.next();
                 JSONObject obj = new JSONObject();
                 obj.put("name",ontClass.getLocalName());
                 obj.put("uri",ontClass.getURI());
-                list.add(obj);
 
+                list.add(obj);
             }
             return list;
         } catch (Exception e) {
@@ -70,12 +83,17 @@ public class Ontologie {
     }
 
     @RequestMapping(value = "/subClasses",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getSubClasses(@RequestParam("classname") String className) {
+    public List<JSONObject> getSubClasses(@RequestParam("classname") String className) {
+
         List<JSONObject> list=new ArrayList();
+
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
@@ -83,17 +101,17 @@ public class Ontologie {
             System.out.println(classURI);
             OntClass personne = model.getOntClass(classURI );
             Iterator subIter = personne.listSubClasses();
+
             while (subIter.hasNext()) {
+
                 OntClass sub = (OntClass) subIter.next();
                     JSONObject obj = new JSONObject();
                     obj.put("URI",sub.getURI());
+
                     list.add(obj);
-
-
             }
 
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -102,27 +120,32 @@ public class Ontologie {
     }
 
     @RequestMapping(value = "/Individus",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getIndividus() {
+    public List<JSONObject> getIndividus() {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
             Iterator individus = model.listIndividuals();
+
             while (individus.hasNext()) {
+
                 Individual   sub = (Individual) individus.next();
                 JSONObject obj = new JSONObject();
                 obj.put("name",sub.getLocalName());
                 obj.put("uri",sub.getURI());
-                list.add(obj);
 
+                list.add(obj);
             }
 
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -131,12 +154,16 @@ public class Ontologie {
     }
 
     @RequestMapping(value = "/superClasses",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getSuperClasses(@RequestParam("classname") String className) {
+    public List<JSONObject> getSuperClasses(@RequestParam("classname") String className) {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
@@ -144,17 +171,17 @@ public class Ontologie {
             System.out.println(classURI);
             OntClass personne = model.getOntClass(classURI );
             Iterator subIter = personne.listSuperClasses();
+
             while (subIter.hasNext()) {
+
                 OntClass sub = (OntClass) subIter.next();
                 JSONObject obj = new JSONObject();
                 obj.put("URI",sub.getURI());
+
                 list.add(obj);
-
-
             }
 
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -163,12 +190,16 @@ public class Ontologie {
     }
 
     @RequestMapping(value = "/getClasProperty",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getClasProperty(@RequestParam("classname") String className) {
+    public List<JSONObject> getClasProperty(@RequestParam("classname") String className) {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
@@ -176,7 +207,9 @@ public class Ontologie {
 
             OntClass ontClass = model.getOntClass(classURI );
             Iterator subIter = ontClass.listDeclaredProperties();
+
             while (subIter.hasNext()) {
+
                 OntProperty property = (OntProperty) subIter.next();
                 JSONObject obj = new JSONObject();
                 obj.put("propertyName",property.getLocalName());
@@ -189,12 +222,9 @@ public class Ontologie {
                     obj.put("range",property.getRange().getLocalName());
 
                 list.add(obj);
-
-
             }
 
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -203,12 +233,16 @@ public class Ontologie {
     }
 
     @RequestMapping(value = "/equivClasses",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getequivClasses(@RequestParam("classname") String className) {
+    public List<JSONObject> getequivClasses(@RequestParam("classname") String className) {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
@@ -216,17 +250,16 @@ public class Ontologie {
             System.out.println(classURI);
             OntClass personne = model.getOntClass(classURI );
             Iterator subIter = personne.listEquivalentClasses();
+
             while (subIter.hasNext()) {
+
                 OntClass sub = (OntClass) subIter.next();
                 JSONObject obj = new JSONObject();
                 obj.put("URI",sub.getURI());
                 list.add(obj);
-
-
             }
 
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -235,12 +268,16 @@ public class Ontologie {
     }
 
     @RequestMapping(value = "/Instances",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> getInstancesClasses(@RequestParam("classname") String className) {
+    public List<JSONObject> getInstancesClasses(@RequestParam("classname") String className) {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
@@ -248,17 +285,18 @@ public class Ontologie {
             System.out.println(classURI);
             OntClass personne = model.getOntClass(classURI );
             Iterator subIter = personne.listInstances();
+
             while (subIter.hasNext()) {
+
                 Individual   sub = (Individual) subIter.next();
                 JSONObject obj = new JSONObject();
                 obj.put("name",sub.getLocalName());
                 obj.put("uri",sub.getURI());
-                list.add(obj);
 
+                list.add(obj);
             }
 
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -268,12 +306,16 @@ public class Ontologie {
 
 
     @RequestMapping(value = "/isHierarchyRoot",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public   List<JSONObject> isHirarchieroot(@RequestParam("classname") String className) {
+    public List<JSONObject> isHirarchieroot(@RequestParam("classname") String className) {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
@@ -290,13 +332,9 @@ public class Ontologie {
               }
 
               list.add(obj);
-
           }
 
-
-
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -306,15 +344,20 @@ public class Ontologie {
 
     @RequestMapping(value = "/query",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
     public List<JSONObject> query() {
+
         List<JSONObject> list=new ArrayList();
         String fileName = "gym_semantic.owl";
+
         try {
+
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
+
             OntModel model = ModelFactory
                     .createOntologyModel(OntModelSpec.OWL_DL_MEM);
             model.read(reader,null);
 
+            //Aqui utilizo sparql
             String sprql = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" +
                     "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
@@ -324,7 +367,9 @@ public class Ontologie {
             QueryExecution qe = QueryExecutionFactory.create(query, model);
             ResultSet resultSet = qe.execSelect();
            int x=0;
+
             while (resultSet.hasNext()) {
+
                 x++;
                 JSONObject obj = new JSONObject();
                 QuerySolution solution = resultSet.nextSolution();
@@ -332,16 +377,16 @@ public class Ontologie {
                 obj.put("subject",solution.get("x").toString());
                 obj.put("property",solution.get("y").toString());
                 obj.put("object",solution.get("z").toString());
+
                 list.add(obj);
             }
+
             System.out.println(x);
             return list;
-
 
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     }
-
 }
